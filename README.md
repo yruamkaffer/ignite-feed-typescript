@@ -1,54 +1,115 @@
-# React + TypeScript + Vite
+# 📰 Ignite Feed
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and modern social media post feed built with React and TypeScript, inspired by component-driven development.  
+Perfect for practicing React fundamentals, props, states, and component composition.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📚 About
 
-## Expanding the ESLint configuration
+**Ignite Feed** was developed as part of the Rocketseat Ignite course.  
+The app mimics a social feed interface where users can view posts, author info, and leave comments.  
+It's a hands-on way to learn and reinforce concepts like component hierarchy, props, state, and events.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🚀 Technologies Used
+
+- **React** ⚛️
+- **TypeScript** 💙
+- **Vite** ⚡
+- **CSS Modules** 🎨
+- **Date-fns** 🗓️
+
+---
+
+## ✨ Features
+
+- 📄 Render dynamic post data using props
+- 🗨️ Add and delete comments with validation
+- ⏰ Show published date relative to now
+- ♻️ Component reuse and organization
+- 📱 Responsive layout and design
+
+---
+
+## 📁 Folder Structure
+
+```
+ignite-feed-typescript/
+├── src/
+│   ├── components/
+│   │   ├── Header/
+│   │   ├── Post/
+│   │   └── Sidebar/
+│   ├── App.tsx
+│   └── main.tsx
+├── public/
+├── index.html
+└── vite.config.ts
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ How to Run
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yruamkaffer/ignite-feed-typescript.git
+   ```
+
+2. Navigate to the project folder:
+
+   ```bash
+   cd ignite-feed-typescript
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Run the project:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and go to `http://localhost:5173`
+
+---
+
+## 💡 Learning Highlights
+
+- Using `useState` and event handling in React
+- Type checking props and state with TypeScript
+- Styling components with CSS Modules
+- Formatting dates with date-fns
+- Working with lists and keys in JSX
+
+---
+
+## 🙌 Contributions
+
+Want to improve the UI or add features like post creation or API integration?  
+Pull requests are more than welcome! 🚀
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 👤 Author
+
+Developed with 💡 by [Yruam Käffer de Faria](https://github.com/yruamkaffer)
+
+---
+
+## 📝 Description
+
+A social feed interface built with React and TypeScript for practicing props, state, and component-based design — with comment functionality and clean styling.
